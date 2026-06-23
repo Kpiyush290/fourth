@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner scanner = new Scanner(System.util);
+
+        // Prompt the user for the first number (a)
+        System.out.print("Enter value for a: ");
+        int a = scanner.nextInt();
+
+        // Prompt the user for the second number (b)
+        System.out.print("Enter value for b: ");
+        int b = scanner.nextInt();
+
+        // Calculate the sum
+        int sum = a + b;
+
+        // Display the result
+        System.out.println("The sum of a + b is: " + sum);
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+    }
+}
